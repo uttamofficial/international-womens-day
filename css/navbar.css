@@ -1,0 +1,160 @@
+/* =============================================
+   NAVBAR STYLES
+   Navigation bar, logo, links, hamburger, CTA
+   ============================================= */
+
+/* --- Fixed Glassmorphism Navbar --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.85rem 0;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  transition: padding var(--transition), box-shadow var(--transition),
+    background var(--transition),
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Shrink navbar on scroll */
+.navbar.scrolled {
+  padding: 0.6rem 0;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* --- Layout --- */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- Logo --- */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: transform var(--transition-fast);
+}
+
+.logo:hover {
+  transform: scale(1.03);
+}
+
+.logo-icon {
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.logo:hover .logo-icon {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* --- Nav Links --- */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 0.9rem;
+  position: relative;
+  transition: color var(--transition);
+}
+
+/* Animated underline on hover */
+.nav-links a:not(.nav-cta)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: var(--gradient);
+  border-radius: 2px;
+  transition: width var(--transition), left var(--transition);
+}
+
+.nav-links a:not(.nav-cta):hover {
+  color: var(--pink);
+}
+
+.nav-links a:not(.nav-cta):hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Active section highlighting */
+.nav-links a.active-link {
+  color: var(--pink);
+}
+
+.nav-links a.active-link::after {
+  width: 100%;
+  left: 0;
+}
+
+/* --- Call-to-Action Button --- */
+.nav-cta {
+  background: var(--gradient);
+  color: #fff !important;
+  -webkit-text-fill-color: #fff;
+  padding: 0.5rem 1.4rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+/* --- Hamburger Toggle (hidden on desktop) --- */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 1001;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: var(--deep-plum);
+  border-radius: 3px;
+  transition: var(--transition);
+  transform-origin: center;
+}
+
+/* Hamburger → X animation */
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}

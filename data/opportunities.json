@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Google Generation Scholarship",
+    "description": "Awarded to women excelling in computer science & related fields. Includes $10,000 USD tuition grant, Google networking retreat, and an online community of past recipients.",
+    "category": "scholarship",
+    "link": "https://buildyourfuture.withgoogle.com/scholarships"
+  },
+  {
+    "title": "Adobe Women-in-Technology Scholarship",
+    "description": "Up to $10,000 for female undergraduates studying CS, data science, or UX. Recipients also get a year-long Adobe mentorship and potential internship placement.",
+    "category": "scholarship",
+    "link": "https://www.adobe.com/corporate-responsibility/education/women-in-tech.html"
+  },
+  {
+    "title": "AAUW International Fellowships",
+    "description": "Prestigious fellowships for women who are not U.S. citizens pursuing full-time graduate or postdoctoral research in the United States. Grants range from $20K–$50K.",
+    "category": "scholarship",
+    "link": "https://www.aauw.org/resources/programs/fellowships-grants/"
+  },
+  {
+    "title": "Google Data Analytics Certificate",
+    "description": "A beginner-friendly professional certificate by Google. Covers spreadsheets, SQL, Tableau, and R — with hands-on projects. 100% online, on your own schedule.",
+    "category": "course",
+    "link": "https://grow.google/certificates/data-analytics/"
+  },
+  {
+    "title": "Python for Everybody",
+    "description": "Learn Python from scratch with Dr. Chuck's world-famous free course from the University of Michigan. Perfect first step into data science & backend development.",
+    "category": "course",
+    "link": "https://www.py4e.com/"
+  },
+  {
+    "title": "freeCodeCamp — Full-Stack Web Dev",
+    "description": "Over 3,000 hours of free curriculum covering HTML, CSS, JavaScript, React, Node.js, databases, and more. Earn free verified certifications as you go.",
+    "category": "course",
+    "link": "https://www.freecodecamp.org/"
+  },
+  {
+    "title": "Remote Data Analyst",
+    "description": "Work-from-home data analyst openings at top companies. Roles include building dashboards, writing SQL queries, and turning raw data into business insights.",
+    "category": "job",
+    "link": "https://remotewoman.com/"
+  },
+  {
+    "title": "Junior Web Developer (Remote)",
+    "description": "Entry-level remote positions for front-end & full-stack developers. Companies hiring women in tech with mentorship programs and flexible schedules.",
+    "category": "job",
+    "link": "https://powertofly.com/"
+  },
+  {
+    "title": "Remote UX/UI Designer",
+    "description": "Curated remote design roles for women — from wireframing to high-fidelity prototypes. Companies that champion diversity-first hiring practices.",
+    "category": "job",
+    "link": "https://www.flexjobs.com/"
+  },
+  {
+    "title": "National Commission for Women (India)",
+    "description": "Register complaints online related to domestic violence, harassment, and other issues. 24/7 helpline: 7827-170-170.",
+    "category": "helpline",
+    "link": "http://ncw.nic.in/"
+  },
+  {
+    "title": "Women Against Abuse Hotline",
+    "description": "24/7 confidential hotline providing crisis counseling, safety planning, and shelter referrals for survivors of domestic abuse.",
+    "category": "helpline",
+    "link": "https://www.womenagainstabuse.org/"
+  }
+]

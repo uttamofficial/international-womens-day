@@ -1,0 +1,294 @@
+/* =============================================
+   HERO SECTION STYLES
+   Full-screen hero with orbs, badge, stats, CTA
+   ============================================= */
+
+/* --- Hero Container --- */
+.hero {
+  position: relative;
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(
+    160deg,
+    #fce4ec 0%,
+    #f3e5f5 25%,
+    #e1bee7 50%,
+    #ce93d8 75%,
+    #ab47bc 100%
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  overflow: hidden;
+}
+
+/* --- Animated Floating Orbs --- */
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: orbFloat 8s ease-in-out infinite;
+}
+
+.hero-orb--1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(214, 51, 132, 0.3);
+  top: -10%;
+  right: -5%;
+  animation-delay: 0s;
+}
+
+.hero-orb--2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(111, 66, 193, 0.3);
+  bottom: -5%;
+  left: -5%;
+  animation-delay: -2s;
+}
+
+.hero-orb--3 {
+  width: 200px;
+  height: 200px;
+  background: rgba(233, 30, 99, 0.2);
+  top: 40%;
+  left: 15%;
+  animation-delay: -4s;
+}
+
+.hero-orb--4 {
+  width: 250px;
+  height: 250px;
+  background: rgba(156, 39, 176, 0.25);
+  top: 10%;
+  left: 50%;
+  animation-delay: -6s;
+}
+
+@keyframes orbFloat {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(30px, -30px) scale(1.05);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+  75% {
+    transform: translate(15px, 10px) scale(1.02);
+  }
+}
+
+/* --- Radial Light Overlay --- */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at 20% 80%,
+      rgba(255, 255, 255, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    );
+}
+
+/* --- Hero Content --- */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+}
+
+/* --- Badge Pill --- */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0.55rem 1.6rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--deep-plum);
+  animation: fadeDown 0.8s ease-out;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #e91e63;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.4);
+  }
+}
+
+/* --- Title & Gradient Text --- */
+.hero-title {
+  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+  font-weight: 800;
+  color: var(--deep-plum);
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+  animation: fadeUp 0.8s ease-out 0.2s both;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--pink), var(--purple), var(--pink));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* --- Subtitle --- */
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: #5e2763;
+  max-width: 580px;
+  margin: 0 auto 2.2rem;
+  font-weight: 400;
+  animation: fadeUp 0.8s ease-out 0.4s both;
+}
+
+/* --- Action Buttons --- */
+.hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeUp 0.8s ease-out 0.6s both;
+}
+
+/* --- Trust Stats --- */
+.hero-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3.5rem;
+  animation: fadeUp 0.8s ease-out 0.8s both;
+}
+
+.hero-stat {
+  text-align: center;
+  transition: transform var(--transition);
+}
+
+.hero-stat:hover {
+  transform: scale(1.08);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--deep-plum);
+  display: inline;
+  transition: color var(--transition);
+}
+
+.hero-stat:hover .stat-number {
+  color: var(--pink);
+}
+
+.stat-plus {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #7b3f7f;
+  font-weight: 500;
+  margin-top: 0.15rem;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(74, 14, 78, 0.2);
+  transition: height var(--transition);
+}
+
+/* --- Scroll Indicator --- */
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--deep-plum);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 20px;
+  background: var(--deep-plum);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-line::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient);
+  animation: scrollDown 2s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}

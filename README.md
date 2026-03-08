@@ -1,6 +1,6 @@
 # 💜 Women Opportunity Hub
 
-> *"Empowering Women, Transforming Futures"* — Happy International Women's Day 2026 🌸
+> _"Empowering Women, Transforming Futures"_ — Happy International Women's Day 2026 🌸
 
 A modern web platform created for **International Women's Day** to help women discover scholarships, free tech courses, remote jobs, and important helpline resources — all in one place.
 
@@ -32,21 +32,21 @@ The goal is simple — **connect women with the right opportunities and support 
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| **HTML5** | Page structure and semantic markup |
-| **CSS3** | Styling, animations, responsive design, glassmorphism effects |
-| **JavaScript** | Dynamic card rendering, category filtering, scroll animations, parallax effects |
-| **Google Fonts** | Poppins font family (weights 300–800) |
+| Technology       | Purpose                                                                         |
+| ---------------- | ------------------------------------------------------------------------------- |
+| **HTML5**        | Page structure and semantic markup                                              |
+| **CSS3**         | Styling, animations, responsive design, glassmorphism effects                   |
+| **JavaScript**   | Dynamic card rendering, category filtering, scroll animations, parallax effects |
+| **Google Fonts** | Poppins font family (weights 300–800)                                           |
 
 No frameworks or libraries — **100% vanilla HTML, CSS, and JavaScript**.
 
 ---
 
-## 📁 Project Folder Structure
+## 📁 Project Structure
 
 ```
-Women's Day Challange/
+international-womens-day/
 ├── index.html      # Main HTML page
 ├── style.css       # All styles, animations, and responsive rules
 ├── script.js       # Opportunity data, rendering, filtering, and interactions
@@ -57,16 +57,21 @@ Women's Day Challange/
 
 ## 🚀 How to Run the Project Locally
 
-1. **Clone or download** this project to your local machine.
+1. **Clone** the repository:
+
+   ```bash
+   git clone https://github.com/uttamofficial/international-womens-day.git
+   ```
 
 2. **Navigate** to the project folder:
+
    ```bash
-   cd "Women's Day Challange"
+   cd international-womens-day
    ```
 
 3. **Open** `index.html` in your browser:
    - Double-click `index.html`, **or**
-   - Right-click → *Open with* → your preferred browser, **or**
+   - Right-click → _Open with_ → your preferred browser, **or**
    - Use a live server extension in VS Code:
      ```
      # Install Live Server extension in VS Code
@@ -91,13 +96,13 @@ Women's Day Challange/
 
 ## 👩‍💻 Author
 
-**Built with 💜 on International Women's Day 2026**
+**[uttamofficial](https://github.com/uttamofficial)** — Built with 💜 on International Women's Day 2026
 
 ---
 
 ## 💐 A Message for Women's Day
 
-> *Every woman deserves access to opportunity — whether it's education, a career, or simply knowing that help is one call away. This project is a small step toward making those opportunities visible and accessible to all.*
+> _Every woman deserves access to opportunity — whether it's education, a career, or simply knowing that help is one call away. This project is a small step toward making those opportunities visible and accessible to all._
 >
 > **#EachForEqual #WomensDay2026 #SheInspires**
 
